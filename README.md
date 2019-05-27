@@ -30,6 +30,14 @@ Adds an entry for rentify.test / rentify.local
 
 Starts nginx
 
+rentify.test runs via passenger, rentify.local just with rails server
+
+check your config files in 
+
+```
+/usr/local/etc/nginx/servers
+```
+
 ## Troubleshooting
 
 You may still have pow installed, and test is now a valid domain, so try rentify.local instead
@@ -38,4 +46,5 @@ Make sure you're accessing on http not https
 
 ## To do
 
-https
+* [ ] Puma
+* [ ] https
