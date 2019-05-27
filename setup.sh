@@ -8,10 +8,10 @@ sudo bash -c 'cat <<EOT >> /etc/hosts
 127.0.0.1 api.rentify.local
 EOT'
 root=`find $PWD ~ -type d  -path '*/rentify/public'`
-cat <<EOT >> rentify.test.conf
+cat <<EOT > rentify.test.conf
 server {
     listen 80;
-    server_name rentify.test.conf;
+    server_name rentify.test;
 
     root $root;
 
